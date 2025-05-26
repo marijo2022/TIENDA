@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Contenedor principal en filas */
+#contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Contenedor de columnas por sección */
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Productos destacados (2 columnas) */
+#destacados .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Ofertas (3 columnas) */
+#ofertas .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 33.3%;
+  box-sizing: border-box;
+}
+
+/* Disponibles (4 columnas) */
+#disponible .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  border: solid 5px coral;
+  background-color: white;
+  width: 25%;
+  box-sizing: border-box;
+}

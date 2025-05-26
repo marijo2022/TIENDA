@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Sombra al título de Productos Destacados */
+#destacados h2 {
+  text-shadow: 0 0 3px white;
+}
+
+/* Doble sombra al título de Ofertas */
+#ofertas h2 {
+  text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A;
+}
+
+/* Contenedor principal en filas */
+#contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Contenedor de columnas por sección */
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Productos destacados (2 columnas con sombra avanzada) */
+#destacados .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 50%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 0, 0.3);
+}
+
+/* Ofertas (3 columnas con sombra simple) */
+#ofertas .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  width: 33.3%;
+  box-sizing: border-box;
+  box-shadow: 4px 8px;
+}
+
+/* Disponibles (4 columnas con sombra de color) */
+#disponible .contenedor > div {
+  text-align: center;
+  padding: 10px;
+  border: solid 5px coral;
+  background-color: white;
+  width: 25%;
+  box-sizing: border-box;
+  box-shadow: 4px 8px #D46A6A;
+}
